@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21ee2996-ff15-48ee-982f-27dad2ac7cc1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/estimate.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/param.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pdf.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/naive-bayes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/naive-bayes.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/naive-bayes.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/email.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/email.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,9 +27,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2guexvb0ZimSo7VT3Ytka5rPYNX" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -35,6 +37,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.email.executor": "Run",
     "Python.estimate.executor": "Run",
     "Python.main.executor": "Run",
     "Python.pdf.executor": "Run",

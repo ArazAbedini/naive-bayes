@@ -1,5 +1,7 @@
 import pandas as pd
 from param import find_params
+from pdf import pdf_uniform, pdf_binomial, pdf_gaussian
+import numpy as np
 
 FILE_PATH = '../data/dogs.csv'
 
@@ -49,5 +51,24 @@ for index, class_item in enumerate(class_list):
                 json[index]['ear_head_ratio']['b'] = b
     breed.update(json)
 
+
 probability = 1.0
+print(df.iloc[0])
+x = df.iloc[0]
+prob_list = []
+for index, class_item in enumerate(class_list):
+    probability = 1.0
+    for feature in features:
+        match feature:
+            case 'height':
+                prob = pdf_gaussian(x['height'], breed[index]['height']['mu'], breed[index]['height']['sigma'])
+            case 'weight':
+                prob = pdf_gaussian(x['weight'], breed[index]['weight']['mu'], breed[index]['weight']['sigma'])
+            case "bark_days":
+                prob = pdf_binomial(x['bark_days'], breed[index]['bark_days']['n'], breed[index]['bark_days']['p'])
+            case "ear_head_ratio":
+                prob = pdf_uniform(x['ear_head_ratio'], breed[index]['ear_head_ratio']['a'], breed[index]['ear_head_ratio']['b'])
+        probability *= prob
+    prob_list.append(probability)
+print(np.argmax(prob_list))
 
